@@ -3,6 +3,13 @@
 <head>
   <title>jQuery test page</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <style>
+  .bylinebackground {
+    color: yellow;
+  }
+  </style>
+
   <script>
 
   function getheadline() {
@@ -37,6 +44,14 @@ function noSubhed() {
 function undo(){
     $('h2').show();
     $('h3').show();
+}
+
+function highlightByline (){
+  $('.byline').addClass('bylinebackground');
+}
+
+function unHighlightByline (){
+  $('.byline').removeClass();
 }
 
 
